@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nattanon Sukmetta — Portfolio</title>
+<meta name="description" content="ผลงานของ ณัฐนนท์ สุขเมตตา (บาส)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero container">
+    <img src="assets/avatar-cat.png" alt="อวาตาร์ของบาส" class="hero__avatar">
+    <div>
+      <p class="eyebrow">Portfolio</p>
+      <h1>Nattanon Sukmetta <span class="hero__nick">(บาส)</span></h1>
+      <p class="hero__sub">นักศึกษาเทคโนโลยีสารสนเทศ — นี่คือ 3 ผลงานที่เคยลงมือทำจริง กดเปิดดูแต่ละงานได้เลย</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="cards">
+
+      <article class="card">
+        <div class="card__visual card__visual--wandermate">
+          <svg viewBox="0 0 64 64" class="card__icon" aria-hidden="true">
+            <path d="M32 6 40 24 58 26 44 38 48 56 32 46 16 56 20 38 6 26 24 24Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="card__body">
+          <h2>WanderMate</h2>
+          <p>เว็บหาเพื่อนเที่ยว — หน้าค้นหาเพื่อน โปรไฟล์ ระบบจอง และแดชบอร์ด</p>
+          <ul class="tags"><li>HTML</li><li>Tailwind CSS</li></ul>
+          <a href="projects/wandermate/index.html" target="_blank" rel="noopener" class="btn">เปิดดูผลงาน →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__visual card__visual--employee">
+          <img src="assets/emp-man.png" alt="" class="avatar avatar--a">
+          <img src="assets/emp-woman.png" alt="" class="avatar avatar--b">
+        </div>
+        <div class="card__body">
+          <h2>Employee Management App</h2>
+          <p>ระบบจัดการพนักงานแบบ SPA — แบ่ง component และจัดการ state ด้วย React</p>
+          <ul class="tags"><li>React</li><li>Vite</li></ul>
+          <a href="projects/employee-app/index.html" target="_blank" rel="noopener" class="btn">เปิดดูผลงาน →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__visual card__visual--personal">
+          <img src="assets/avatar-cat.png" alt="" class="avatar avatar--single">
+        </div>
+        <div class="card__body">
+          <h2>เว็บโปรไฟล์ส่วนตัว</h2>
+          <p>เว็บ static แนะนำตัว ประวัติ และสิ่งที่ชอบ ฝึกทำ layout ด้วย CSS ล้วน</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+          <a href="projects/nattanon-site/menu.html" target="_blank" rel="noopener" class="btn">เปิดดูผลงาน →</a>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a href="mailto:bbassab.x@gmail.com">bbassab.x@gmail.com</a>
+      <span>© 2026 Nattanon Sukmetta</span>
+    </div>
+  </footer>
+
+</body>
+</html>
