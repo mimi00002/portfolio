@@ -72,6 +72,27 @@ h1 {
   max-width: 56ch;
 }
 
+.figma-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  padding: 9px 18px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  background: var(--bg-soft);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.figma-tab:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+  border-color: var(--accent-soft);
+}
+.figma-tab__icon { width: 14px; height: auto; flex-shrink: 0; }
+
 /* ===== Buttons ===== */
 .btn {
   display: inline-flex;
@@ -158,4 +179,5 @@ h1 {
 }
 @media (max-width: 520px) {
   .hero { text-align: center; justify-content: center; }
+  .figma-tab { margin-left: 0; }
 }
