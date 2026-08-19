@@ -72,13 +72,18 @@ h1 {
   max-width: 56ch;
 }
 
+.figma-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-self: flex-start;
+  margin-left: auto;
+}
 .figma-tab {
   position: relative;
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  align-self: flex-start;
-  margin-left: auto;
   padding: 10px 20px 10px 16px;
   border-radius: 999px;
   font-size: 0.85rem;
@@ -208,5 +213,5 @@ h1 {
 }
 @media (max-width: 520px) {
   .hero { text-align: center; justify-content: center; }
-  .figma-tab { margin-left: 0; align-self: center; }
+  .figma-tabs { margin-left: 0; align-self: center; justify-content: center; }
 }
