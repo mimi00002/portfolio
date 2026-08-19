@@ -72,61 +72,6 @@ h1 {
   max-width: 56ch;
 }
 
-.figma-tab {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  padding: 10px 20px 10px 16px;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--text);
-  background: #fff;
-  box-shadow: 0 1px 2px rgba(20, 24, 31, 0.06), 0 6px 16px -10px rgba(20, 24, 31, 0.15);
-  isolation: isolate;
-  transition: transform 0.25s cubic-bezier(.2,.8,.2,1), box-shadow 0.25s, color 0.2s;
-}
-.figma-tab::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 1.5px;
-  background: linear-gradient(135deg, #f24e1e, #ff7262, #a259ff, #1abcfe, #0acf83);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  opacity: 0.55;
-  transition: opacity 0.25s;
-  z-index: -1;
-}
-.figma-tab:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 26px -12px rgba(162, 89, 255, 0.45), 0 4px 10px -4px rgba(255, 114, 98, 0.3);
-}
-.figma-tab:hover::before { opacity: 1; }
-.figma-tab__icon {
-  width: 15px;
-  height: auto;
-  flex-shrink: 0;
-  filter: drop-shadow(0 1px 1px rgba(20, 24, 31, 0.08));
-}
-.figma-tab__arrow {
-  display: inline-block;
-  font-size: 0.9em;
-  transform: translate(0, 0);
-  transition: transform 0.25s;
-}
-.figma-tab:hover .figma-tab__arrow { transform: translate(2px, -2px); }
-
-.figma-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 0 0 28px;
-}
-
 /* ===== Buttons ===== */
 .btn {
   display: inline-flex;
@@ -157,6 +102,16 @@ h1 {
   transition: transform 0.25s, box-shadow 0.25s;
 }
 .card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.card--figma { display: block; }
+.card__figma-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--accent-dark);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
 
 .card__visual {
   height: 150px;
@@ -168,8 +123,8 @@ h1 {
 .card__visual--wandermate .card__icon { width: 56px; height: 56px; color: var(--accent-dark); }
 .card__visual--employee { background: linear-gradient(135deg, #f4f6fb, #eef1f7); }
 .card__visual--personal { background: linear-gradient(135deg, #fff7ed, #ffedd5); }
-.card__visual--gpts { background: linear-gradient(135deg, #eef2ff, #e0e7ff); }
-.card__visual--gpts .card__icon { width: 52px; height: 52px; color: #4338ca; }
+.card__visual--figma { background: linear-gradient(135deg, #fff0eb, #f3e8ff); }
+.card__icon--figma { width: 40px; height: auto; filter: drop-shadow(0 2px 4px rgba(20, 24, 31, 0.1)); }
 .avatar {
   width: 68px;
   height: 68px;
@@ -215,5 +170,4 @@ h1 {
 }
 @media (max-width: 520px) {
   .hero { text-align: center; justify-content: center; }
-  .figma-row { justify-content: center; }
 }
